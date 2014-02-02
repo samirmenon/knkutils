@@ -20,7 +20,7 @@ for p=1:numtodo
 end
   
 % make the figure
-parfor p=1:numtodo
+for p=1:numtodo
     prev = warning('query'); warning('off');  % avoid "all pixels are constant" warning
   statusdots(p,numtodo);
   temp = tempimages(:,:,p);

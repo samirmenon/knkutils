@@ -35,7 +35,7 @@ v = flatten(v);
 
 % do it
 dist = zeros(1,num);
-parfor p=1:num
+for p=1:num
   ix = ceil(rand(1,sz) * len);
   dist(p) = feval(fun,v(ix));
 end

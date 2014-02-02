@@ -147,7 +147,7 @@ if ~isempty(mcparams)
   % do it
   newvols = zeros([size(vols,4) targetres],'int16');
   validvol = true(targetres);
-  parfor p=1:size(mcparams,1)
+  for p=1:size(mcparams,1)
 %     stimeB = clock;
 
     % undo the extratrans, pull from motion-corrupted location, but actually pull from pixelshifted location
@@ -202,7 +202,7 @@ else
   % resample the volumes
   newvols = zeros([size(vols,4) targetres],'int16');
   validvol = true(targetres);
-  parfor p=1:size(vols,4)
+  for p=1:size(vols,4)
 %     stimeB = clock;
     if size(pixelshifts,4)==1
       coordsB = coordsB0;

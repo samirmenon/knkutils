@@ -85,7 +85,7 @@ mx = max(x(:));
 
 % do it
 f = NaN*zeros(size(x0));
-parfor pp=1:length(x0)
+for pp=1:length(x0)
   
   % if auto-rejection desired, see if we need to do it
   if h(3) && (x0(pp) < mn || x0(pp) > mx)

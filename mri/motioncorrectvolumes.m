@@ -159,7 +159,7 @@ numvols = length(vols);
 % process each time-series
 paramsB = {};
 fprintf('processing %d time-series...',numvols);
-parfor p=1:numvols
+for p=1:numvols
   
   % calc
   nt = size(vols{p},4);

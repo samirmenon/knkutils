@@ -39,7 +39,7 @@ end
 
 % do it
 dist = {};
-parfor p=1:num
+for p=1:num
   ix = repmat({':'},1,max(ndims(m),dim));
   ix{dim} = ceil(rand(1,sz) * len);
   dist{p} = feval(fun,subscript(m,ix));

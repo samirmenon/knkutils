@@ -114,7 +114,7 @@ end
 % do it
 f = NaN*zeros(size(x0));
 fprintf('localregression4d');
-parfor pp=1:numel(x0)
+for pp=1:numel(x0)
   statusdots(pp,numel(x0),20);
 
   % calculate k and ix

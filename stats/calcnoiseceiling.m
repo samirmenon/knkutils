@@ -95,7 +95,7 @@ signalstd = sqrt(posrect(overallvar-noisevar));  % cases x 1
 % perform Monte Carlo simulations
 dist = zeros(ncases,n1,n2);
 fprintf('calculating noise ceiling');
-parfor x=1:n1
+for x=1:n1
   statusdots(x,n1);
 
   % randomly generate some "true" signals (cases x amps).

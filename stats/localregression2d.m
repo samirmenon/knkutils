@@ -92,7 +92,7 @@ end
 
 % do it
 f = NaN*zeros(size(x0));
-parfor pp=1:numel(x0)
+for pp=1:numel(x0)
 
   % calculate k and ix
   switch mode
